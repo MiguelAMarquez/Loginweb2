@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class= "container">
+		<div class="row">
+			<div>
+				<form action= 'Check_User' method='post'>
+				
+					<div class= "form-row">
+					
+						<h1>Miguel Márquez</h1>
+						<h2>Proyecto 2: Login </h2>
+					
+					</div>
+					
+					<div class= "col-md-4 mb-3">
+						<label>Email</label>
+						<input type="text" class="form-control" id="fname" name="mail" placeholder="Email" pattern="[Aa-Zz]+" required>
+						<p>El nombre debe estar compuesto de solo caracteres y no contener mas de 15</p>
+					</div>
+					<div class= "col-md-4 mb-3">
+						<label>Password</label>
+						<input type="Password" class="form-control" id="pass" name="pass" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+						<p>Debe tener al menos un numero, una mayuscula, una minuscula y no menos de 8 caracteres</p>
+					</div>
+					<div class= "btn btn-primary">
+					
+						<button type="submit" class="btn btn-primary">Login</button> 
+						
+					</div>
+					<div style='clear:both;'></div><div style='float:right;'><a href='OperationForm?Id=Add'>Registrarse</a></div>
+				</form>
+				
+			
+			</div>
+		
+		
+		</div>
+	
+	
+	
+	</div>
+
+</body>
+</html>
